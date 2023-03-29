@@ -1,0 +1,8 @@
+.profileImg {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    border-radius: 9999px;
+    object-fit: cover;
+    object-position: bottom;
+}
