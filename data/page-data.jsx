@@ -6,9 +6,9 @@ export const personalData = {
     "Master of Science in Artificial Intelligence, Imperial College London (2019-2021)",
   ],
   contactLinks: [
-    "https://www.freecodecamp.org/KaHengLei",
     "https://twitter.com/mrplayertw",
     "https://github.com/KaHeng-Lei",
+    "https://www.freecodecamp.org/KaHengLei",
     "https://codepen.io/kaheng-lei",
   ],
 };

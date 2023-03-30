@@ -6,8 +6,18 @@ import { FaCodepen } from "react-icons/fa";
 
 import styles from "./layout.module.css";
 
-const Sidebar = ({ data }) => {
+type SidebarProps = {
+  data: {
+    name: string;
+    role: string;
+    education: string[];
+    contactLinks: string[];
+  };
+};
+
+const Sidebar = ({ data }: SidebarProps) => {
   const { name, role, education, contactLinks } = data;
+
   return (
     <div className=" bg-slate-200 w-full sm:w-1/3 sm:h-screen sm:fixed">
       <div className=" text-slate-900 flex flex-col items-center p-10">
@@ -25,16 +35,16 @@ const Sidebar = ({ data }) => {
         <p className="mb-2">{education[1]}</p>
         <h3 className="mb-2 mt-8">Contact Me</h3>
         <div className="flex flex-row gap-6 text-2xl ">
-          <a href="https://twitter.com/mrplayertw">
+          <a href={contactLinks[0]}>
             <BsTwitter />
           </a>
-          <a href="https://github.com/KaHeng-Lei">
+          <a href={contactLinks[1]}>
             <BsGithub />
           </a>
-          <a href="https://www.freecodecamp.org/KaHengLei">
+          <a href={contactLinks[2]}>
             <SiFreecodecamp />
           </a>
-          <a href="https://codepen.io/kaheng-lei">
+          <a href={contactLinks[3]}>
             <FaCodepen />
           </a>
         </div>

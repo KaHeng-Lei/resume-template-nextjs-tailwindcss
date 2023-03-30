@@ -1,9 +1,9 @@
-import { aboutMe, skills, professionalData } from "@/data/page-data";
+import { aboutMe, skills, professionalData } from "../data/page-data";
 import AboutMe from "./component/about-me";
 import Skills from "./component/skills";
 import ProfessionalExp from "./component/professional-exp";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div>
       <AboutMe data={aboutMe} />
@@ -11,4 +11,6 @@ export default function Home() {
       <ProfessionalExp data={professionalData} />
     </div>
   );
-}
+};
+
+export default Home;

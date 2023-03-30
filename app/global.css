@@ -19,3 +19,15 @@
         @apply text-base lg:text-lg
     }
 }
+
+.btn {
+    @apply p-4 basis-1/2 cursor-pointer text-xl uppercase transition duration-150 ease-in-out
+}
+
+.skill {
+    @apply text-base p-3 bg-slate-100 rounded-lg
+}
+
+section {
+    @apply mb-10
+}
